@@ -68,9 +68,9 @@ class CommentViewSet(viewsets.ModelViewSet):
 
     def destroy(self, request, pk=None):
         user = request.user
-        comment = get_object_or_404(TaskComment, id=pk)
 
         if user.groups.filter(name=ADMIN_GROUP).exists():
+            comment = get_object_or_404(TaskComment, id=pk)
             comment.delete()
             return Response(status=204)
 
