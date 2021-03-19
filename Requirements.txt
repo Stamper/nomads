@@ -6,7 +6,7 @@ Django==2.2.2
 django-celery==3.3.0
 django-filter==2.1.0
 django-model-utils==3.1.2
-djangorestframework==3.9.4
+djangorestframework==3.11.2
 kombu==3.0.37
 Markdown==3.1.1
 model-mommy==1.6.0
